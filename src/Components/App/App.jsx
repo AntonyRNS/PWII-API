@@ -7,15 +7,9 @@ import HomePage from '../HomePage/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Sobre from '../Sobre/Sobre';
 import Contato from '../Contato/Contato';
+import TelaLogin from '../TelaLogin/TelaLogin';
 
 function App() {
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then(response => response.json())
-      .then(data => console.log(data))
-  }, []);
-
   return (
     <BrowserRouter>
       <div className="app">
@@ -27,6 +21,7 @@ function App() {
               <Route path='/homepage' element={<HomePage />}></Route>
               <Route path='/sobre' element={<Sobre />}></Route>
               <Route path='/contato' element={<Contato/>}></Route>
+              <Route path='/' element={<TelaLogin/>}></Route>
             </Routes>
           </div>
         </div>
