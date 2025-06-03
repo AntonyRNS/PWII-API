@@ -10,6 +10,14 @@ export default function TelaLogin() {
             .then(response => response.json())
             .then(data => setUsuarios(data))
     }, []);
+    useEffect(() => {
+        if (logado){
+            navigate('/homepage')
+        }else{
+            alert('Username our Email incorretos.')
+        }
+    }, [logado]);
+
     const checarLogin = (e) => {
         e.preventDefault();
         console.log(usuarios)
@@ -20,11 +28,6 @@ export default function TelaLogin() {
                 setLogado(true)
             }
         });
-            if (logado){
-                navigate('/homepage')
-            }else{
-                alert('Username ou Email incorretos')
-            }
         
     } 
     return (
