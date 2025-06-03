@@ -5,6 +5,8 @@ import Footer from '../Footer/Footer';
 import './App.css';
 import HomePage from '../HomePage/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Sobre from '../Sobre/Sobre';
+import Contato from '../Contato/Contato';
 
 function App() {
 
@@ -23,8 +25,8 @@ function App() {
           <div className="content">
             <Routes>
               <Route path='/homepage' element={<HomePage />}></Route>
-              <Route></Route>
-              <Route></Route>
+              <Route path='/sobre' element={<Sobre />}></Route>
+              <Route path='/contato' element={<Contato/>}></Route>
             </Routes>
           </div>
         </div>

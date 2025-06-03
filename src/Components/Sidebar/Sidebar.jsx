@@ -17,7 +17,7 @@ function Sidebar() {
         <nav>
           <Link to={'/homepage'}>Início</Link> <br />
           <Link to={'/sobre'}>Sobre</Link> <br />
-          <Link to={'/Contato'}>Contato</Link> <br />
+          <Link to={'/contato'}>Contato</Link> <br />
         </nav>
       </aside>
 
