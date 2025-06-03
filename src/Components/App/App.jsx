@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import './App.css';
 
 function App() {
-
+  
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(response => response.json())
