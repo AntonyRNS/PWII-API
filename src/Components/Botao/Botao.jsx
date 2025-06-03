@@ -6,6 +6,6 @@ export default function Botao(){
         navigate('/form')
     }
     return(
-        <button onClick={abrirForm}></button>
+        <button onClick={abrirForm}>Abrir form</button>
     )
 }
