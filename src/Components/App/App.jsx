@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Sobre from '../Sobre/Sobre';
 import Contato from '../Contato/Contato';
 import TelaLogin from '../TelaLogin/TelaLogin';
+import Form from '../Form/Form';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path='/sobre' element={<Sobre />}></Route>
               <Route path='/contato' element={<Contato/>}></Route>
               <Route path='/' element={<TelaLogin/>}></Route>
+              <Route path='/form' element={<Form />}></Route>
             </Routes>
           </div>
         </div>
