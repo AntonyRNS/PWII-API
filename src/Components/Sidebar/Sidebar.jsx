@@ -2,11 +2,12 @@ import React from 'react';
 import './Sidebar.css';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
 
-    <BrowserRouter>
+    <div>
       <aside className="sidebar">
         {/* <ul>
           <li>Início</li>
@@ -14,18 +15,16 @@ function Sidebar() {
           <li>Contato</li>
         </ul> */}
         <nav>
-          <Link></Link>
-          <Link></Link>
-          <Link></Link>
+          <Link to={'/homepage'}>Início</Link> <br />
+          <Link to={'/sobre'}>Sobre</Link> <br />
+          <Link to={'/Contato'}>Contato</Link> <br />
         </nav>
       </aside>
 
-      <Routes>
-        <Route path='/' element={() => <HomePage />}></Route>
-        <Route></Route>
-        <Route></Route>
-      </Routes>
-    </BrowserRouter>
+      
+    </div>
+
+
 
 
 
